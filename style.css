@@ -2,36 +2,51 @@
 
 /* 레이아웃 */
 #wrap {}
-#header { height: 50px;background: #fff}
-#contents {background: #fff;}
-#footer {width: 100%;height: 200px;background: #333;}
+#header { height: 50px;background: #fff; border-bottom:2px solid black}
+#contents {}
+#footer {width: 100%;height: 200px;}
 
 /* 컨텐츠 레이아웃 */
-#cont_map {height: 850px;background: #913212;}
-#cont_instruction {width: 100%;height: 200px;background: #444;}
-#cont_popular {width: 100%;height: 500px;background: #555;}
-#cont_others {width: 100%;height: 600px;background: #666;}
+#cont_map {height: 850px;}
+#cont_instruction {width: 100%;height: 200px;}
+#cont_popular {width: 100%;height: 500px;}
+#cont_others {width: 100%;height: 600px;}
 
 
 /*컨테이너*/
-.container{width: 1200px; margin: 0 auto; height: inherit; box-shadow: 0 0 0 1px #f00 inset;}
+.container{width: 1200px; margin: 0 auto; height: inherit; /*box-shadow: 0 0 0 1px #f00 inset;*/}
 
 /*헤더*/
+#header { position: sticky; top: 0; background: #fff; z-index: 2;}
 .header {line-height: 50px;}
 .header .header-logo {float: left; height: 50px; font-size: 25px;}
 .header .header-menu {float: right; height: 50px;}
 .header .header-menu a {color: #000; padding: 10px 0px 10px 13px;}
 
+/* 지도 */
+#kmap {width: 50%; height: 100%; float: left;}
+#gmap {height: 100%; width: 50%; float: left;}
+
 /*인기 여행지*/
 .cont_popular {position: relative; padding: 20px 0 20px;}
-.cont_popular .title {text-align: center;  box-shadow: 0 0 0 2px #fff inset;}
+.cont_popular .title {text-align: center;  box-shadow: 0 0 0 2px #00f inset;}
 .cont_popular .title h2 {padding: 10px 0;}
 .cont_popular ul {overflow: hidden;}
-.cont_popular ul li {box-sizing: border-box; float: left; width: 330px; height: 330px; box-shadow: 0 0 0 3px #fff inset; margin: 35px;}
+.cont_popular ul li {float: left; width: 330px; height: 330px; box-shadow: 0 0 0 3px #0f0 inset; margin: 35px;}
 
 /*다른 사람의 일정 목록*/
 .cont_others {position: relative; padding: 20px 0 20px;}
-.cont_others .title {text-align: center; box-shadow: 0 0 0 2px #fff inset;}
+.cont_others .title {text-align: center; box-shadow: 0 0 0 2px #00f inset;}
 .cont_others .title h2 {padding: 10px 0;}
-.cont_others ul {overflow: hidden;}
-.cont_others ul li {box-sizing: border-box; float: left; width: 330px; height: 190px; box-shadow: 0 0 0 3px #fff inset; margin: 35px;}
+.cont_others ul {text-align: center;}
+.cont_others ul li { float: left; width: 330px; height: 190px; box-shadow: 0 0 0 3px #fff inset; margin: 35px;}
+.cont_others ul li img {float: left; width: 165px; height: 190px; box-shadow: 0 0 0 3px #000 inset;}
+.cont_others ul li .description { display: inline-block; width: 165px; height: 190px; box-shadow: 0 0 0 3px #000 inset;}
+
+/*이용 안내*/
+.cont_instruction {text-align: center;}
+.cont_instruction .instruction {width: 300px; height: 200px; float: left; position: relative;}
+.cont_instruction .instruction .step {width: 300px; float: left; position: absolute; bottom: 50%; font-size: 25px; font-weight: bold;}
+.cont_instruction .instruction .how_to {width: 300px; height: 100px; float: left; position: absolute; bottom: 0px;}
+
+
