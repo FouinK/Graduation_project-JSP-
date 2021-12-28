@@ -6,8 +6,10 @@
 <meta charset="utf-8">
 <title>회원가입</title>
     <link rel="stylesheet" href="make_member_join.css">
+    
 </head>
 <body>
+
 	 <div class="container">
         <h2>Sign Up</h2>
 
@@ -55,5 +57,6 @@
 		비밀번호를 확인    :  <input name="pw_check">
 		<button value="회원가입_완료">회원가입 완료</button>
 	</form>
+	<script type="text/javascript" src="make_member_join.js"></script>
 </body>
 </html>
