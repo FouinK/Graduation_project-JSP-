@@ -1,2 +1,4 @@
-# graduation_project-Beta-
+# Graduation_project-JSP-
+//eclipseIDEA 깃 사용 방법 숙지 실패
+
 페이지 넘어갈 때 로그인 한 ID값도 같이 넘어가는 것 모두 구현, 로그인 없이 내 일정 만들기 불가능(기능은 작동하지만 데이터베이스 저장x), 내 일정 삭제 및 커뮤니티에 내 일정 공유 public값을 활용해서 구현완료(내 일정 삭제시 커뮤티니에서도 자동 삭제). 
